@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>SFBA BEERS</title>
+<link href = "style.css" rel="stylesheet">
+<script src = "script.js"></script>
+<body>
+<span id = "root-container" class = "hidden">
+	<div class = "container" id = "navbar-container">
+		<a href = "index.html">Home</a> <a href = "shop.html">Shop</a> <a href = "about.html"> About</a>
+	</div>
+	<div class = "container" id = "content-continer">
+		<div id = "landing">
+			<div id = "welcome">
+				<h1>Welcome To SFBA BEERS</h1>
+				<h2>Discover what makes SFBAB the leading craft brewry in the bay area</h2>
+			</div>
+			<span class = "store-link">
+				<a href = "shop.html"> Start brewing </a>
+			</span>
+		</div>
+		<div id = "showcase">
+			<span class = "box">
+				<p class = "heading">Choose the brew that's right for you</p>
+				<p class = "subtext hidden">Never compromise on what matters most. Choose from any of our bespoke collections
+				or customize your own.
+				</p>
+				<img src ="landing alt.jpg" width="400">
+			</span>
+			<span class = "box">
+				<p class = "heading">Happy hour every hour</p>
+				<p class = "subtext hidden">We deliver straight to your home so you can always enjoy a SFBA Beer</p>
+				<img src ="landing alt 3.jpg" width="400">
+			</span>
+			<div class = "store-link">
+				<a href = "shop.html"> Start brewing </a>
+			</div>
+		</div>
+		<footer>
+			<div>
+				contact us at 1-800-253-CRAFT or at <a href = "info@SFBA.com">info@SFBA.com</a>
+			</div>
+		<footer>
+	</div>
+</span>
+<div id = "id-check">
+	<div>
+	Welcome to SFBA BEERS..<br> please answer these question before you continue<br><br>
+	</div>
+	<div class = "question" data-question = "0">Are you 21 years or older?</div>
+	<div class = "question hidden" data-question = "1">Do you live in the Bay Area? (We only make local deliveries)</div>
+	<div class = "question hidden" data-question = "2">Thanks! you may enter </div>
+	<div class="id-container">
+		<div class = "progress-container">
+			<div class="progress" id="progress" data-index = "0"></div>
+			<div class="circle active">0</div>
+			<div class="circle">1</div>
+			<div class="circle">2</div>
+		
+		</div>
+		<button class="btn" id="prev">Prev</button>
+		<button class="btn" id="next">Next</button>
+		<br>
+		<button class = "hidden" id = "enter"> Enter! </button>
+    </div>
+</div>
+</body>
+</html>

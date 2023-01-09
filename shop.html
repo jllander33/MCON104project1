@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="shop.css" />
+    <title>Split Landing Page
+    </title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="split left">
+	    <div class = "container" id = "navbar-container">
+			<a href = "index.html">Home</a> <a href = "shop.html">Shop</a> <a href = "about.html"> About</a>
+		</div>
+        <div class = "section" id = "order-select">
+			Choose a beer:
+			<form action="/order.php">
+				<select name="order" id="order">
+					<option value="Pale Malty European Lager">Pale Malty European Lager</option>
+					<option value="Spiced Beer">Spiced Beer</option>
+					<option value="Cider or Perry">Cider or Perry</option>
+					<option value="Belgian Strong Ale">Belgian Strong Ale </option>
+					<option value="Standard American">Standard American</option>
+					<option value="British Bitter">British Bitter</option>
+					<option value="Thousand Parrot Happoshu">Thousand Parrot Happoshu</option>
+					<option value="The Moody Regularity">The Moody Regularity</option>
+					<option value="The Lovebird's Seagrass">The Lovebird's Seagrass</option>
+					<option value="Mountain Goat Amber">Mountain Goat Amber</option>
+				</select><br><br>
+				<input type="submit" value="Submit">
+			</form>
+			<br><br>
+		</div>
+      </div>
+      <div class="split right">
+        <div class = "section" id = "custom-order">
+			Don't see what you want? Write in your own flavor or contact us for large orders:
+			<form action="/custom.php">
+				<p><label for="custom">Descibe your flavor:</label></p>
+				<textarea id="custom" name="w3review" rows="4" cols="50">Example: Fermentables: Pilsner 34.32%; Aromatic 22.27%; Belgian Candi Sugar - Clear/Blond (0L) 21.77%; Soft Candi Sugar - Blond 21.63% Hops: East Kent Goldings (4-5 AA) 60.0 min; Saaz (3-4 AA) 24.2 min</textarea>
+				<br><br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+      </div>
+    </div>
+
+    <script src="shop.js"></script>
+  </body>
+</html>
